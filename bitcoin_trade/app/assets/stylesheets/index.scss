@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  display: inline-block;
+  margin: 5px 0 -5px -20px;
+  padding-left: 20px;
+}
+
+.header-left {
+  float: left;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo-text {
+  line-height: 65px;
+  margin-left: -15px;
+  padding-right: 25px;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  transition: all 0.5s;
+}
+
+.header-right span {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right span:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.name {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.login {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 70px 0 50px 0;
+  //background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-image: url("/bitcoin.jpg");
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'Didot',sans-serif;
+  font-size: 47px;
+  letter-spacing: 4px;
+}
+
+.title p {
+  font-family: '游明朝体+36ポかな','YuMincho +36p Kana',sans-serif;
+  margin-top: -15px;
+  opacity: 0.7;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+
+.box {
+  margin: 20px 45px 30px 45px;
+  padding: 0 20px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: rgba(192, 192, 192, 0.45);
+}
+
+.btcprice{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.box p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.select {
+  height: 40px;
+  width: 130px;
+  font-size: 23px;
+}
+
+.price {
+  height: 45px;
+  width: 220px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.size {
+  height: 45px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn {
+  height: 50px;
+  width: 120px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #cca11f;
+  box-shadow: 1px 8px 3px black;
+  margin-top: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}

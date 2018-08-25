@@ -1,0 +1,47 @@
+<header>
+  <div class="container">
+    <div class="header-left">
+      <img class="logo" src="/icon.png">
+    </div>
+    <div class="header-left text">
+      <span class="logo-text">自動売買システム</span>
+    </div>
+    <div class="header-right">
+      <span class="name">NAME</span>
+      <span class="login">bitFlyer</span>
+      <span class="login">ログアウト</span>
+    </div>
+  </div>
+</header>
+
+<div class="top-wrapper">
+  <div class="container">
+    <div class="title">
+      <h1>Virtual Currency Automated Trading System</h1>
+      <p>プログラミングによって仮想通貨の売買を自動化させるシステム</p>
+    </div>
+
+    <div class="box myjpy">
+      <p>現在の日本円保有額</p>
+      <%= @response1 %> 円
+    </div>
+    <div class="box btcprice">
+      <p>現在のＢＴＣ価格</p>
+      <%= @response_hash %> 円
+    </div>
+    <div class="box mybtc">
+      <p>現在のＢＴＣ保有数</p>
+      <%= @response2 %> btc
+    </div>
+
+    <%= form_tag("/index/set") do %>
+      <span>【 売買選択 】</span><br>
+      <%= select_tag :side, options_for_select(["BUY", "SELL"]), class: "form select" %><br><br>
+      <span>【 金額選択 】</span><br>
+      <%= text_field :price, nil, :placeholder => "650000", class: "form price" %><br><br>
+      <span>【 数量選択 】</span><br>
+      <%= text_field :size, nil, placeholder: "0.01", class: "form size" %><br><br>
+      <%= submit_tag "取引する", class: "form btn" %>
+    <% end %>
+  </div>
+</div>
