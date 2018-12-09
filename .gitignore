@@ -3,3 +3,8 @@
 packages/
 compile-cache/
 storage/
+body_check.rb
+fizz.rb
+quest.rb
+body_check.rb
+janken.rb
